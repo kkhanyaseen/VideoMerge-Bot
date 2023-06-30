@@ -11,13 +11,13 @@ class Config(object):
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
     DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
-    TIME_GAP = int(os.environ.get("TIME_GAP", 5))
-    MAX_VIDEOS = int(os.environ.get("MAX_VIDEOS", 5))
+    TIME_GAP = int(os.environ.get("TIME_GAP", 200))
+    MAX_VIDEOS = int(os.environ.get("MAX_VIDEOS", 8))
     STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME")
     STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
     MONGODB_URI = os.environ.get("MONGODB_URI")
-    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
+    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY"))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
 
     START_TEXT = """
 Hi Unkil, I am Video Merge Bot!
